@@ -1,0 +1,14 @@
+.text {
+  font-family: sans-serif;
+  font-size: 1.3em;
+  height: 100px;
+  border: 1px solid red;
+  overflow: hidden;
+  
+  transition: height 3s;
+}
+
+.text.expanded {
+  height: 275px;
+}
+

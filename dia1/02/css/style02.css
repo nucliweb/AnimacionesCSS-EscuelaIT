@@ -1,0 +1,40 @@
+.wrapper {
+  height: 100px;
+}
+
+.wrapper:hover .ball {
+
+    transform: translateX(300px) translateY(300px);
+    background-color: red;
+    border-radius: 0;
+
+}
+
+    .ball {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      border-radius: 50%;
+      
+
+      transition: transform 1s,
+                  background-color 2s 1s,
+                  border-radius 2s;
+/*
+      transition-property: left, 
+                            top 1s,
+                            background-color,
+                            border-radius;
+      transition-duration: 1s, 2s;
+      transition-delay: 0, 2s;
+*/
+      
+
+    }
+
+
+
+
+
+
+

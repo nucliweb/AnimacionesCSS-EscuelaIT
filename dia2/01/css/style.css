@@ -1,0 +1,48 @@
+body {
+  margin: 3em 10%;
+  background: #333; }
+
+.cyrcle,
+.cyrcle2 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #393 #933 #399 #993;
+  border-radius: 50%;
+  /* shorthand de animation ---------- */
+  -webkit-animation: animationBall 2s cubic-bezier(0.83, 0.24, 0.37, 1.01) infinite reverse forwards;
+          animation: animationBall 2s cubic-bezier(0.83, 0.24, 0.37, 1.01) infinite reverse forwards;
+  /*
+    animation: <single-animation-name> || <time> || <timing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state>
+    */ }
+
+.cyrcle.pause {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused; }
+
+.cyrcle2 {
+  top: 100px;
+  -webkit-animation-direction: normal;
+          animation-direction: normal; }
+
+@-webkit-keyframes animationBall {
+
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px); }
+
+  100% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px); } }
+
+@keyframes animationBall {
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px); }
+  100% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px); } }

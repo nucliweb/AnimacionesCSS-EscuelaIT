@@ -1,0 +1,69 @@
+body { 
+  margin: 3em 10%;
+  background: #333;
+}
+
+.cyrcle,
+.cyrcle2 {
+	position: relative;
+	top: 20px;
+	left: 20px;
+	width: 0;
+    height: 0;
+  
+    border-width: 50px;
+    border-style: solid;
+    border-color: #393 #933 #399 #993;
+    border-radius: 50%;
+
+//	animation-name: animationBall;
+//	animation-duration: 2s;
+//  animation-fill-mode: forwards;
+//	animation-iteration-count: infinite;
+//  animation-direction: reverse;
+//  animation-delay: 5s;
+//  animation-play-state: running;
+//
+//  animation-timing-function: steps(3);
+//  animation-timing-function: ease;
+//    animation-timing-function: ease-in;
+//    animation-timing-function: ease-in-out;
+//    animation-timing-function: ease-out;
+//    animation-timing-function: linear;
+//    animation-timing-function: cubic-bezier(.83, .24, .37, 1.01);
+//    animation-timing-function: step-start;
+//    animation-timing-function: step-end;
+
+  
+  /* shorthand de animation ---------- */
+  animation: animationBall 2s cubic-bezier(.83, .24, .37, 1.01) infinite reverse forwards;
+  //https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+  /*
+    animation: <single-animation-name> || <time> || <timing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state>
+    */
+  
+}
+
+.cyrcle.pause {
+  animation-play-state: paused;
+}
+
+.cyrcle2 {
+  top: 100px;
+  animation-direction: normal;
+}
+
+@keyframes animationBall {
+	0% {
+      transform: translateX(-200px)
+    }
+
+	100% {
+      transform: translateX(800px)
+    }
+}
+
+
+
+
+
