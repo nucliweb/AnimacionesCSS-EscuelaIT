@@ -1,0 +1,152 @@
+.monster-animation {
+	width: 800px;
+	height: 600px;
+	background: url('images/background.png') top left no-repeat;
+	border-radius: 30px;
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.rocks-far {
+	position: absolute;
+	left: -10px;
+	top: 30px;
+	-webkit-animation: rocks-far 16s linear 0 infinite;
+	        animation: rocks-far 16s linear 0 infinite;
+}
+
+.rocks-near {
+	position: absolute;
+	left: -10px;
+	top: 180px;
+	-webkit-animation: rocks-near 8s linear 0 infinite;
+	        animation: rocks-near 8s linear 0 infinite;
+}
+
+.monster-leg-left-back {
+	position: absolute;
+	left: 240px;
+	top: 370px;
+}
+
+.monster-leg-left-front {
+	position: absolute;
+	left: 480px;
+	top: 370px;
+}
+
+.monster-body {
+	position: absolute;
+	left: 160px;
+	top: 245px;
+	animation: monster-body 0.25s linear 0 infinite alternate;
+	-webkit-animation: monster-body 0.25s linear 0 infinite alternate;
+}
+
+.monster-tail {
+	position: absolute;
+	left: 130px;
+	top: 262px;
+}
+
+.monster-ear {
+	position: absolute;
+	left: 460px;
+	top: 200px;
+}
+
+.monster-leg-right-back {
+	position: absolute;
+	left: 200px;
+	top: 380px;
+}
+
+.monster-leg-right-front {
+	position: absolute;
+	left: 440px;
+	top: 380px;
+}
+
+.monster-leg-right-front, 
+.monster-leg-left-back {
+	-webkit-animation: legs1 0.5s linear 0 infinite alternate;
+	        animation: legs1 0.5s linear 0 infinite alternate;
+}
+
+.monster-leg-left-front, 
+.monster-leg-right-back {
+	-webkit-animation: legs2 0.5s linear 0 infinite alternate;
+	        animation: legs2 0.5s linear 0 infinite alternate;
+}
+
+.monster-tail, 
+.monster-ear {
+	-webkit-animation: ear-tail 0.25s linear 0 infinite alternate;
+	        animation: ear-tail 0.25s linear 0 infinite alternate;
+}
+
+/* ANIMATIONS --------------------------------------------------------------- */
+@keyframes legs1 {
+	from { transform: rotate(-10deg); }
+	to { transform: rotate(10deg); }
+}
+
+@-webkit-keyframes legs1 {
+	from { -webkit-transform: rotate(-10deg); }
+	to { -webkit-transform: rotate(10deg); }
+}
+
+@keyframes legs2 {
+	from { transform: rotate(10deg); }
+	to { transform: rotate(-10deg); }
+}
+
+@-webkit-keyframes legs2 {
+	from { -webkit-transform: rotate(10deg); }
+	to { -webkit-transform: rotate(-10deg); }
+}
+
+@keyframes monster-body {
+	from { transform: translateY(0px); }
+	to { transform: translateY(10px); }
+}
+
+@-webkit-keyframes monster-body {
+	from { -webkit-transform: translateY(0px); }
+	to { -webkit-transform: translateY(10px); }
+}
+
+@keyframes ear-tail {
+	from { transform: translateY(0px) rotate(-5deg); }
+	to { transform: translateY(10px) rotate(5deg);  }
+}
+
+@-webkit-keyframes ear-tail {
+	from { -webkit-transform: translateY(0px) rotate(-5deg); }
+	to { -webkit-transform: translateY(10px) rotate(5deg);  }
+}
+
+@keyframes rocks-far {
+	from { transform: translateX(0px); }
+	to { transform: translateX(-1120px); }
+}
+
+@-webkit-keyframes rocks-far {
+	from { -webkit-transform: translateX(0px); }
+	to { -webkit-transform: translateX(-1120px); }
+}
+
+@keyframes rocks-near {
+	from { transform: translateX(0px); }
+	to { transform: translateX(-1189px); }
+
+}
+
+@-webkit-keyframes rocks-near {
+	from { -webkit-transform: translateX(0px); }
+	to { -webkit-transform: translateX(-1189px); }
+}
+
+
