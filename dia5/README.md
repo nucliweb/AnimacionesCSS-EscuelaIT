@@ -16,7 +16,9 @@
 - [Cómo mejorar el rendimiento de las animaciones con CSS](http://librosweb.es/tutorial/como-mejorar-el-rendimiento-de-las-animaciones-con-css/)
 - [CSS vs. JS Animation: Which is Faster?](http://davidwalsh.name/css-js-animation)
 - [CSS vs JavaScript Animations](https://developers.google.com/web/fundamentals/look-and-feel/animations/css-vs-javascript)
-
+- [A Tale of Animation Performance](https://css-tricks.com/tale-of-animation-performance/)
+- [Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)
+- [Understanding CSS Timing Functions](http://www.smashingmagazine.com/2014/04/15/understanding-css-timing-functions/)
  
 
 #### Librerías y recursos
@@ -28,4 +30,5 @@
 - [Bounce js](http://bouncejs.com/)
 - [snabbt.js](http://daniel-lundin.github.io/snabbt.js/)
 - [Velocity.js](http://julian.com/research/velocity/)
+- [función easing](http://easings.net/es)
 
